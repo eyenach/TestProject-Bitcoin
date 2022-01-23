@@ -37,7 +37,8 @@ public class BitcoinController {
         return new Response(HttpStatus.OK.value(), "Success", listBitcoin);
     }
 
-    @RequestMapping(value = "/history", method=RequestMethod.GET)
+    @RequestMapping(value = "/history", method=RequestMethod.GET, produces = "application/json")
+    @ResponseBody
     public Response getHistory(@Valid @RequestBody History history, HttpServletResponse response) {
         String startDateStr = history.getStartDatetime();
         String endDateStr = history.getEndDatetime();
