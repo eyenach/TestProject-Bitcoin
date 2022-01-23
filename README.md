@@ -6,6 +6,7 @@
 > properties
 * java version 11
 * spring framework version 2.5.9
+* `port` default: 8080
 
 > API
 * Save Record `POST/ localhost:{port}/bitcoin`
