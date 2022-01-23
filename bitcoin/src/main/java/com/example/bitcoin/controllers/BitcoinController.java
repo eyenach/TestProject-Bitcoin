@@ -34,7 +34,7 @@ public class BitcoinController {
     public Response getBitcoin() {
         List<Bitcoin> listBitcoin = bitcoinService.getAllBitcoins();
         // System.out.println("get bitcoin");
-        return new Response(HttpStatus.OK.value(), "Sucess", listBitcoin);
+        return new Response(HttpStatus.OK.value(), "Success", listBitcoin);
     }
 
     @RequestMapping(value = "/history", method=RequestMethod.GET)
@@ -65,7 +65,7 @@ public class BitcoinController {
         }
 
         response.setStatus(HttpServletResponse.SC_OK);
-        return new Response(HttpStatus.OK.value(), "Sucess", listHistory);
+        return new Response(HttpStatus.OK.value(), "Success", listHistory);
     }
 
     @RequestMapping(value = "/bitcoin", method=RequestMethod.POST, produces = "application/json")
