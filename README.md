@@ -1,7 +1,7 @@
 ### TestProject-Bitcoin
 
 > clone project
-* git clone https://github.com/eyenach/TestProject-Bitcoin.git
+* `git clone https://github.com/eyenach/TestProject-Bitcoin.git`
 
 > properties
 * java version 11
